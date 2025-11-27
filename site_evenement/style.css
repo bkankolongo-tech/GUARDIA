@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=Eater&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+   
+
+/* Reset simple */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+    font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background: #f6f8fb;
+    color: #222;
+    line-height: 1.45;
+    padding: 24px;
+}
+
+/* Conteneur centré */
+main, .container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
+/* Titres */
+h1 {
+    font-size: 2rem;
+    color: #0b3d91;
+    margin-bottom: 0.5rem;
+}
+h2 { font-size: 1.4rem; color: #0d4a86; margin: 1.2rem 0 0.6rem; }
+h3 { font-size: 1.1rem; color: #0d4a86; margin: 0.9rem 0 0.4rem; }
+
+/* Introduction / paragraphes */
+#introduction {
+    background: linear-gradient(90deg, rgba(11,61,145,0.06), rgba(13,74,134,0.03));
+    border-left: 4px solid #0b3d91;
+    padding: 12px;
+    margin-bottom: 1rem;
+    border-radius: 4px;
+}
+
+/* Listes */
+ul {
+    margin: 8px 0 16px 1.2rem;
+}
+ul li { margin: 6px 0; }
+
+/* Tables responsive et stylées */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 12px 0 24px;
+    background: #fff;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.04);
+}
+thead th {
+    text-align: left;
+    background: #0b70d6;
+    color: #fff;
+    padding: 10px;
+    font-weight: 600;
+}
+tbody td {
+    padding: 10px;
+    border-top: 1px solid #e6eefc;
+}
+tr:nth-child(even) tbody td { background: #fcfdff; }
+
+/* Pour petites écrans, permettre le scroll horizontal */
+@media (max-width: 640px) {
+    table { display: block; width: 100%; overflow-x: auto; -webkit-overflow-scrolling: touch; }
+}
+
+/* Images : rendre responsives + limiter la largeur */
+img {
+    display: block;
+    max-width: 400px; /* ajuste la taille maximale des images */
+    width: 100%;
+    height: auto;
+    margin: 12px 0;
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgba(12,40,90,0.08);
+}
+
+/* Variante pour vignettes plus petites */
+.thumb {
+    max-width: 240px;
+}
+
+/* Texte sous image */
+p.événement, .caption {
+    font-weight: 600;
+    color: #0b3d91;
+    margin-top: 6px;
+}
+
+/* Petits éléments d'information identifiés */
+#CV, #football, #festival {
+    background: #ffffff;
+    border-left: 3px solid #0b3d91;
+    padding: 8px;
+    margin: 6px 0;
+    border-radius: 3px;
+}
+
+/* Classes utilitaires */
+.center { text-align: center; }
+.small { font-size: .9rem; color: #556; }
+
+/* Accessibilité (contraste des liens) */
+a {
+    color: #0b3d91;
+    text-decoration: none;
+    border-bottom: 1px dashed rgba(11,61,145,0.18);
+}
+a:hover { text-decoration: underline; }
+
+/* Boutons simples */
+.btn {
+    display: inline-block;
+    background: #0b3d91;
+    color: #fff;
+    padding: 8px 12px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* Ajustements finaux pour petites résolutions */
+@media (max-width: 420px) {
+    body { padding: 14px; }
+    h1 { font-size: 1.6rem; }
+    img { max-width: 100%; }
+}
+
+
+
